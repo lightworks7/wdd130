@@ -49,3 +49,11 @@ body footer {
     border-top: 1.5px solid #333;
     text-align: center;
 }
+
+/* This is a CSS comment */
+/* *{...} this is a universal selector type
+element(h1, img){...} applies to all elements
+.class(red, blue){...} applies to all elements with ___ class value
+#ID(red, blue){...} applies to all elements with ___ ID value
+
+*/

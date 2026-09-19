@@ -3,18 +3,18 @@
     /* rapids blue */
     --primary-color-transparent: rgba(0, 158, 217, 0.7);
     /* 70% opacity */
-    --secondary-color: #b7b5a1;
+    /* --secondary-color: #b7b5a1; */
     /* white water */
-    --tertiary-color: #e28f1f;
+    /* --tertiary-color: #e28f1f; */
     /* paddle and skin brown */
     --tertiary-color-transparent: rgba(226, 141, 29, 0.9);
     --primary-text-color: #000;
     --secondary-text-color: #fff;
-    --border: 1px solid #60f006;
+    /* --border: 1px solid #60f006; */
     /* life guard lemon */
     --padding: 1rem;
     --heading-font: "Times New Roman", Georgia, serif;
-    --body-font: Roboto, Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -55,13 +55,14 @@ section {
 }
 
 /* original is only for .socialmedia a */
-a {
+header nav a {
     text-decoration: none;
     padding: var(--padding);
 }
 
 .socialmedia a {
     padding: 5px;
+    text-decoration: none;
 }
 
 .hero {

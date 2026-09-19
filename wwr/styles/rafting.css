@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #009ed9;
+    /* rapids blue */
+    --primary-color-transparent: rgba(0, 158, 217, 0.7);
+    /* 70% opacity */
+    --secondary-color: #b7b5a1;
+    /* white water */
+    --tertiary-color: #e28f1f;
+    /* paddle and skin brown */
+    --tertiary-color-transparent: rgba(226, 141, 29, 0.9);
+    --primary-text-color: #000;
+    --secondary-text-color: #fff;
+    --border: 1px solid #60f006;
+    /* life guard lemon */
+    --padding: 1rem;
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Roboto, Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-text-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    text-shadow: 0 0 10px var(--primary-text-color);
+}
+
+nav,
+p,
+section {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* original is only for .socialmedia a */
+a {
+    text-decoration: none;
+    padding: var(--padding);
+}
+
+.socialmedia a {
+    padding: 5px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 210px;
+    width: 100%;
+    padding: var(--padding);
+    text-align: center;
+    background-color: var(--primary-color-transparent);
+    color: var(--secondary-text-color);
+    text-shadow: 0 0 10px var(--primary-text-color);
+}
+
+.hero article {
+    position: absolute;
+    top: 290px;
+    right: 80px;
+    width: 80%;
+    min-height: 120px;
+    text-align: center;
+    background-color: var(--tertiary-color-transparent);
+    color: var(--primary-text-color);
+}
+
+.hero article img {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin: 5px 5px 0 0;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+header nav a {
+    color: var(--secondary-text-color);
+}

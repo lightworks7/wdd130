@@ -1,8 +1,10 @@
+/* Last updated: 23/09/2026 02:16 */
 :root {
     --primary-color: #153f7c;
     /* rapids blue */
     --primary-color-transparent: rgba(21, 63, 124, 0.7);
     /* 70% opacity */
+    --tertiary-color: #E39319;
     --tertiary-color-transparent: rgba(227, 147, 25, 0.9);
     --primary-text-color: #000;
     --secondary-text-color: #fff;
@@ -42,7 +44,7 @@ h2 {
 }
 
 section h2 {
-    background-color: #E39319;
+    background-color: var(--tertiary-color);
     padding: 8px;
     text-align: center;
 }
@@ -65,7 +67,6 @@ header nav {
     grid-column: span 2/4;
 }
 
-/* original is only for .socialmedia a */
 header nav a {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -186,7 +187,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    border-bottom: 3px solid #E39319;
+    border-bottom: 3px solid var(--tertiary-color);
 
 }
 

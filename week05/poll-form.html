@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- <p>Contact Information</p> -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required><br>
+                <label>Email: <input type="email" name="useremail" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+                <!-- <p>Questions</p> -->
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Brave">Brave</option>
+                    <option value="Other">Other</option>
+                </select><br>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet"><br>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea name="feedback" id="feedback"
+                  placeholder="Aba, Como, Ama Hausa, UK, Ugwu Hausa, Idaho..."
+                  rows="5"></textarea><br>
+                <button type="submit">Submit Poll</button>
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2026 | HTML Form - User Poll Activity | Clement Light</p>
+    </footer>
+</body>
+
+</html>

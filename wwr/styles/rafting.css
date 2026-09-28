@@ -2,7 +2,7 @@
 :root {
     /* rapids blue */
     --primary-color-transparent: rgba(21, 63, 124, 0.7);
-    /* 70% opacity */
+    --primary-color: rgba(21, 63, 124, 1);
     --tertiary-color: #E39319;
     --tertiary-color-transparent: rgba(227, 147, 25, 0.9);
     --primary-text-color: #000;
@@ -86,7 +86,7 @@ header nav a {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 0;
     width: 100%;
@@ -176,11 +176,13 @@ h1 {
 .pic img {
     height: 150px;
     width: 150px;
-    border: 3px dashed var(--primary-text-color)
+    border: 1px solid var(--primary-text-color);
+    border-radius: 75px;
 }
 
 .pic figcaption {
     text-align: center;
+    font-weight: 600;
 }
 
 footer {
@@ -188,6 +190,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     border-top: 3px solid var(--tertiary-color);
+    margin-top: 30px;
 
 }
 
@@ -198,4 +201,131 @@ footer p {
 
 footer nav {
     justify-self: center;
+}
+
+/*  */
+/*  */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 16px 0 16px 0;
+}
+
+.contact-grid h2 {
+    grid-row: 1;
+    grid-column: span 2;
+}
+
+form {
+    width: auto;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--tertiary-color);
+    color: black;
+    font-weight: 600;
+}
+
+label {
+    text-align: left;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(0 0 0 / 0.5);
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 3fr;
+}
+
+.form-item .label-legend {
+    grid-column: 1;
+    grid-row: span 3;
+    text-align: left;
+}
+
+.form-item div {
+    grid-column: 2;
+    margin: 4px 0;
+}
+
+fieldset {
+    border: 1px solid rgb(0 0 0 / 0);
+}
+
+#sub-check {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.map {
+    border: 2px solid var(--primary-color);
+    border-radius: 0.3rem;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.contact-top {
+    background-color: var(--tertiary-color);
+    padding: 15px 0;
+}
+
+.contact-top h1 {
+    text-align: center;
+    margin: 15px 0;
+    border-bottom: 8px solid var(--primary-text-color);
+    padding-bottom: 15px;
+}
+
+.contact-top div p {
+    text-align: center;
+    padding: 2px 0;
+    font-weight: 600;
+}
+
+.contact-bottom {
+    background-color: var(--tertiary-color);
+    padding: 10px 2px 20px;
+}
+
+.contact-bottom h2 {
+    border-bottom: 8px solid var(--primary-text-color);
+    padding: 15px 0;
 }

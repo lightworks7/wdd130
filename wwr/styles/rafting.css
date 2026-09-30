@@ -8,8 +8,11 @@
     --primary-text-color: #000;
     --secondary-text-color: #fff;
     --padding: 1rem;
-    --heading-font: Tahoma, sans-serif, "Arial Black";
+    --heading-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
+    --background-color: rgba(255,
+            255,
+            255, 1);
 }
 
 * {
@@ -21,6 +24,7 @@
 body {
     font-family: var(--body-font);
     color: var(--primary-text-color);
+    background-color: var(--background-color);
 }
 
 header,
@@ -53,7 +57,7 @@ section {
     margin: 16px;
 }
 
-header img {
+header a {
     justify-self: center;
     padding: 8px;
 }
@@ -106,6 +110,57 @@ header nav a {
     color: var(--primary-text-color);
 }
 
+.homehero h1 {
+    padding: 2rem 0 2.5rem
+}
+
+.homehero h2 {
+    background-color: transparent;
+    font-size: large;
+    padding: 10px 0;
+}
+
+.homehero article {
+    top: 65px;
+    padding: 10px 0;
+}
+
+#home-bottom {
+    background-color: var(--primary-color)
+}
+
+#home-bottom h2 {
+    width: 60%;
+    right: 0px;
+    position: absolute;
+    top: 0;
+    padding-top: 25px;
+    text-align: center;
+    color: var(--secondary-text-color);
+    text-shadow: 0 0 10px var(--primary-text-color);
+}
+
+#home-bottom article {
+    top: 80px;
+    right: 0px;
+    width: 60%;
+    background-color: var(--secondary-text-color);
+    padding: 15px 0;
+}
+
+#home-bottom img {
+    display: inline-block;
+    margin: 15px;
+    width: 300px;
+    height: auto;
+}
+
+#home-bottom button {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    margin-top: 20px;
+}
+
 .hero article img {
     width: 200px;
     height: auto;
@@ -117,6 +172,14 @@ header nav a {
     background-color: var(--tertiary-color-transparent);
     padding: 24px;
     font-weight: 600;
+}
+
+.homehero p {
+    background-color: transparent;
+    color: var(--secondary-text-color);
+    text-shadow: 0 0 10px var(--primary-text-color);
+    font-size: large;
+    font-weight: 500;
 }
 
 .head-split {
@@ -149,16 +212,33 @@ header nav a {
     border: 3px solid rgba(227, 147, 25, 0.3);
 }
 
+.three {
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 10px 10px 40px
+}
+
+#bg-split .one img {
+    height: 200px;
+}
+
+#trip-split img {
+    height: 200px;
+}
+
 .one {
     grid-column: 1;
     grid-row: 2;
-    margin-left: 8px;
+    margin-top: 20px;
 }
 
 .two {
     grid-column: 3;
     grid-row: 2;
-    margin-right: 8px;
+    margin-top: 20px;
 }
 
 .com-pictures {
@@ -180,7 +260,8 @@ header nav a {
     border-radius: 75px;
 }
 
-.pic figcaption {
+.pic figcaption,
+.history-grid figcaption {
     text-align: center;
     font-weight: 600;
 }
@@ -216,6 +297,11 @@ footer nav {
 .contact-grid h2 {
     grid-row: 1;
     grid-column: span 2;
+}
+
+#index-divider {
+    border-top: 2px solid var(--tertiary-color);
+    margin-top: 15px;
 }
 
 form {
@@ -302,6 +388,12 @@ fieldset {
     grid-row: 2;
 }
 
+.contact-grid p {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: justify;
+}
+
 .contact-top {
     background-color: var(--tertiary-color);
     padding: 15px 0;
@@ -314,18 +406,136 @@ fieldset {
     padding-bottom: 15px;
 }
 
+.contact-top p {
+    text-align: center;
+    font-weight: 600;
+}
+
+#trip-split figure {
+    padding: 12px 0;
+}
+
+#trip-split p {
+    text-align: justify;
+}
+
+#trip-split {
+    margin: 0 15px;
+}
+
 .contact-top div p {
     text-align: center;
     padding: 2px 0;
     font-weight: 600;
 }
 
-.contact-bottom {
+.contact-bottom,
+.history-grid h2,
+table caption,
+.call-to-action h3 {
     background-color: var(--tertiary-color);
-    padding: 10px 2px 20px;
+    padding: 20px 2px 20px;
+    text-align: center;
+}
+
+table caption,
+.call-to-action p {
+    font-weight: 600;
+}
+
+.call-to-action div,
+.call-to-action p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.call-to-action button {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    justify-self: end;
+    justify-items: center;
+}
+
+table {
+    justify-self: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 150px;
 }
 
 .contact-bottom h2 {
     border-bottom: 8px solid var(--primary-text-color);
     padding: 15px 0;
+}
+
+span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+th,
+td {
+    border: 1px solid rgb(150 150 150 / 1);
+    padding: 10px 15px;
+    text-align: center;
+
+}
+
+thead tr,
+tfoot tr {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: small;
+}
+
+tbody tr {
+    font-size: small;
+}
+
+/* main struggle */
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(150 150 150 / 1);
+    letter-spacing: 1px;
+}
+
+tr .col-1 {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+td:hover,
+th:hover {
+    background-color: rgb(150 150 150 / 0.5);
+    cursor: pointer;
+}
+
+caption,
+header {
+    padding: 16px 0 4px 0;
+}
+
+header {
+    border-bottom: 2px solid rgb(150 150 150 / 0.5);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(150 150 150 / 0.2);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody tr.col-1:nth-child(even) td {
+    background-color: #e0e0e0;
+}
+
+tbody tr.col-1:nth-child(odd) td {
+    background-color: #f9f9f9;
 }

@@ -58,7 +58,6 @@ header {
     border-bottom: 2px solid rgb(150 150 150 / 0.5);
 }
 
-/* Apply alternating colors only to rows inside tbody */
 tbody tr:nth-child(even) {
     background-color: rgb(150 150 150 / 0.2);
 }
@@ -69,10 +68,8 @@ tbody tr:nth-child(odd) {
 
 tbody tr.col-1:nth-child(even) td {
     background-color: #e0e0e0;
-    /* lighter grey for even league rows */
 }
 
 tbody tr.col-1:nth-child(odd) td {
     background-color: #f9f9f9;
-    /* lighter white for odd league rows */
 }
